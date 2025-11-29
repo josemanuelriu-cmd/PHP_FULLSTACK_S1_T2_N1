@@ -18,6 +18,9 @@
 	}
 	if (!$boleanNum ) {	
 		echo "Error, el valor no és un número";	
+	}
+	elseif (!$boleanIncrement) {
+		echo "Error, l'increment no és un número valid";	
 	} else {
 		echo "El número fins a on comptar es $num <br>";
 		echo "L'increment es de $increment <br><br>";
