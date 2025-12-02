@@ -7,6 +7,10 @@
 		echo "Error, ha d'introduir un valor numéric del 1 al 100.";
 	} 
  	else {
+		ShowNote($nota);
+	}
+
+	function ShowNote($nota){
 		if ($nota>=60) {
 			echo "El grau es de Primera Divisió";
 		}

@@ -22,11 +22,16 @@
 	elseif (!$boleanIncrement) {
 		echo "Error, l'increment no és un número valid";	
 	} else {
+		ShowList($num, $increment);	
+	}
+
+	function ShowList($num, $increment){
 		echo "El número fins a on comptar es $num <br>";
 		echo "L'increment es de $increment <br><br>";
 		for ($resultat = 1; $resultat <= $num; $resultat+=$increment) {
 			echo "El número es: $resultat<br>";
-		}		
+		}
+		
 	}
 
 ?>

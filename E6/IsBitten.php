@@ -1,14 +1,22 @@
 <?php
 	
-	$boleanMossegat = rand(1, 100);	
+	$boleanMossegat = IsBitten();
 
-	if ($boleanMossegat >=51) {
-		$boleanMossegat = TRUE;
-		echo "Charlie em va mossegar el dit!";
+	if ($boleanMossegat) {
+		echo "<h1>Charlie em va mossegar el dit!</h1>";
 	} 
  	else {
-		$boleanMossegat = FALSE;
-		echo "Charlie NO em va mossegar el dit!";
+		echo "<h1>Charlie NO em va mossegar el dit!</h1>";
+	}
+
+	function IsBitten(){
+		$value = rand(1, 100);
+		if ($value>=51) {
+			return TRUE;
+		}
+		else {
+			return FALSE;
+		}
 	}
 
 ?>
